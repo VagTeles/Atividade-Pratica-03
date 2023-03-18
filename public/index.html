@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atividade Pratica 03</title>
+    <style>
+      .notas-importantes {
+        margin: 10px;
+        padding: 10px;
+        border: 2px #000 solid;
+      }
+      ol {
+        padding: 0;
+      }
+      footer{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <h1>Desenvolvimento Web</h1>
@@ -110,7 +123,7 @@
         manter o padrão de aspas duplas.
       </p>
       <section class="notas-importantes">
-        Notas importantes -
+        Notas importantes
         <p>
           <li>
             Perceba que a tag inicia com o símbolo de menor, ou seja &lt;.
@@ -135,5 +148,138 @@
         </p>
       </section>
     </section>
+    <hr />
+    <section class="estrutura">
+      <h2>Estrutura básica</h2>
+      <p>
+        Agora que já sabemos sobre tags, vamos explorar a estrutura básica de um
+        documento HTML. Um documento HTML deve ter a declaração da tag inicial
+        &lt;!DOCTYPE html&gt;, embora um documento HTML possa ser interpretado
+        sem a declaração, ela é altamente recomendada.
+      </p>
+      <p>
+        A tag DOCTYPE pode ser escrita em minúscula, ou seja, não é case
+        sensitive. Algumas linguagens exigem a escrita usando letras maiúsculas
+        em certas situações e não funcionam caso escrevemos uma letra minúscula
+        no lugar de uma letra maiúscula, por exemplo em JavaScript uma variável
+        definida como pi é diferente de uma variável definida como PI. Podemos
+        afirmar que HTML não é case sensitive, ou seja, tanto faz se escrevermos
+        com letra maiúscula ou minúscula, já a linguagem JavaScript é case
+        sensitive. Sempre que possível vamos obedecer ao padrão e digitar
+        corretamente as letras.
+      </p>
+      <img src="./assets/images/image2.JPG" alt="tag-doctype" />
+      <p>
+        A tag &lt;html&gt;é a primeira a ser aberta, antes dela sempre teremos
+        apenas a tag !DOCTYPE. A tag &lt;html&gt; é fechada na linha 11, da
+        seguinte forma &lt;html&gt;. A tag img não fechamos, apenas abrimos.
+        Mais adiante veremos exemplos de tag img com fechamento.
+      </p>
+      <p>
+        A tag &lt;head&gt; é utilizada para definir configurações do cabeçalho
+        de nossa página tais como seu conteúdo, título, palavras-chave e outras
+        configurações que são processadas logo que a página é carregada.
+        <br />Na tag &lt;head&gt; temos também inclusão de arquivos CSS e JS.
+      </p>
+      <p>
+        Os <b>títulos</b> são representados dentro da tag &lt;head&gt; e são
+        considerados pelos motores de busca, isso significa que se você deve
+        sempre criar títulos relevantes e criativos para suas páginas.
+      </p>
+      <p>
+        Um documento HTML deve ter apenas uma tag &lt; html&gt;. Tanto a tag
+        &lt; head&gt; quanto a tag &lt;body&gt; são únicas por padrão.
+      </p>
+      <p>
+        A próxima tag que vamos explorar é &lt;body&gt;. Nela podemos colocar
+        tudo que desejamos exibir para nosso usuário, tais como textos, figuras
+        e links. No exemplo colocamos dentro da tag &lt;body&gt; a tag &lt;p&gt;
+        que representa um parágrafo no HTML e tag &lt;img&gt; que utilizamos
+        para adicionar uma imagem ao HTML.
+      </p>
+    </section>
+    <hr />
+    <section class="semantica">
+      <h2>Semântica HTML</h2>
+      <p>
+        As tags HTML devem sem utilizadas de forma que seja compreensível para
+        nós seres humanos e por computadores. Dar semântica a um documento
+        significa simplificar sua codificação e fazer com o documento seja
+        compreensível sem muito esforço. As páginas HTML são interpretadas por
+        outras aplicações, pois uma vez estando “hospedadas” e acessíveis,
+        qualquer aplicação pode abrir nossa página e obter as informações que
+        precisa. Para organizar as informações de uma página existe um grupo e
+        elementos, listados abaixo:
+      </p>
+      <ol>
+        &lt;header&gt;
+      </ol>
+      <ol>
+        &lt;section&gt;
+      </ol>
+      <ol>
+        &lt;article&gt;
+      </ol>
+      <ol>
+        &lt;nav&gt;
+      </ol>
+      <ol>
+        &lt;aside&gt;
+      </ol>
+      <ol>
+        &lt;main&gt;
+      </ol>
+      <ol>
+        &lt;figure&gt;
+      </ol>
+      <ol>
+        &lt;footer&gt;
+      </ol>
+      <ol>
+        &lt;a&gt;
+      </ol>
+      <ol>
+        &lt;em&gt;
+      </ol>
+      <ol>
+        &lt;strong&gt;
+      </ol>
+      <ol>
+        &lt;cite&gt;
+      </ol>
+      <ol>
+        &lt;q&gt;
+      </ol>
+      <ol>
+        &lt;time&gt;
+      </ol>
+      <p>
+        A descrição e utilização de cada uma dessas tags estará disponivel em
+        nosso
+        <a
+          href="https://docs.google.com/document/d/1IBilFERBMefMArgodoXTJKtBeMRFozNLeci-gGDdQ80/edit?usp=sharing]"
+          >Glossário HTML</a
+        >
+        no Class
+      </p>
+      <p>Veja Exemplos para cada uma destas tags semânticas:</p>
+      <img src="./assets/images/main.JPG" alt="tag-main" />
+      <p><img src="./assets/images/article.JPG" alt="tag-article" /></p>
+      <p><img src="./assets/images/aside.JPG" alt="tag-aside" /></p>
+      <img src="./assets/images/figure.JPG" alt="tag-figure" />
+      <p><img src="./assets/images/header.JPG" alt="tag-header" /></p>
+      <img src="./assets/images/nav.JPG" alt="tag-nav" />
+      <p><img src="./assets/images/session.JPG" alt="tag-section" /></p>
+      <img src="./assets/images/strong-em.JPG" alt="tag-strong" />
+      <p>
+        <img
+          src="./assets/images/HTML-semantico-completo.JPG"
+          alt="html-semantico"
+        />
+      </p>
+    </section>
+    <footer>
+      <h3>Atividade Prática Aula 02 - 7a Edição do Programa Starter 2022 - <a href="https://www.growdev.com.br/]">Growdev<</a> /h3>
+    </footer>
   </body>
 </html>
